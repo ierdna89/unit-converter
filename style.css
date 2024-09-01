@@ -26,20 +26,107 @@ main {
 }
 
 #top-container {
-    height: 30svh;
+    height: 35svh;
     background-color: var(--hero);
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-h1 {
+main > div > h1 {
     color: var(--primary-light);
     font-family: sans-serif;
 }
 
+#input-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+input {
+    box-sizing: border-box;
+    text-align: center;
+    border: 3px solid var(--secondary-light);
+    background-color: var(--hero);
+    border-radius: 4px;
+    line-height: 2.2rem;
+    padding: 0 0 0 12px;
+    width: 100%;
+    font-size: 4rem;
+    font-family: sans-serif;
+    font-weight: 900;
+    color: var(--primary-light);
+    max-width: 14rem;
+    min-height: 5rem;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid {
+    border-color: red;
+  }
+  
+input:not(:focus):not(:placeholder-shown):valid {
+    border-color: var(--clicked);
+  }
+
+button {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    background-color: var(--primary-light);
+    color: black;
+    padding: 15px;
+    width: 14rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+button:active {
+    transform: translateY(4px);
+  }
+
 #bottom-container {
-    height: 64svh;
+    height: 60svh;
     background-color: var(--primary-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* margin: 2rem 0 2rem 0; */
+}
+
+
+/* main > div > div > h1:nth-child(1) {
+    background: red;
+    color: var(--secondary-light);
+    font-size: larger;
+    font-family: sans-serif;
+  } */
+  
+.text-container {
+    /* background: red; */
+    color: var(--secondary-light);
+    font-size: larger;
+    font-family: sans-serif;
+}
+
+.container-info {
+    background-color: var(--secondary-dark);
+    height: 6rem;
+    width: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#length-cm {
+    margin-top: 2rem;
 }
 
   footer {
@@ -49,11 +136,11 @@ h1 {
     background: var(--primary-dark);
     gap: 10px;
     width: auto;
-    height: 6svh;
+    height: 5svh;
   }
   
   footer > p {
-    font-size: 1rem;
+    font-size: 0.6rem;
     opacity: 40%;
     color: var(--primary-light);
     font-family: sans-serif;
@@ -61,7 +148,7 @@ h1 {
 
   .fa-github {
     color: var(--secondary-dark);
-    font-size: 25px;
+    font-size: 20px;
     transition: transform 0.5s ease-in-out;
   }
   
