@@ -13,22 +13,26 @@
         <div id="top-container">
             <h1>Metric/Imperial Unit Conversion</h1>
             <div id="input-box">
-                <input id="input-number" name="input-number" value="0" step="0.01" min="0" pattern="\d" type="number" placeholder=" " required>
+                <input id="input-number" name="input-number" value=" " min="0.01" step="0.01" min="0" pattern="\d" type="number" placeholder="enter number" required>
                 <button id="button">Convert</button>
             </div>
         </div>
         <div id="bottom-container">
             <div class="container-info" id="length-cm">
-                <h1 class="text-container">Length (Centimeter/Inches)</h1>
+                <p class="text-container">Length (Centimeter/Inches)</p>
+                <p class="generated-text" id="generate-length-cm"></p>
             </div>
             <div class="container-info" id="length-m">
-                <h1 class="text-container">Length (Meter/Feet)</h1>
+                <p class="text-container">Length (Meter/Feet)</p>
+                <p class="generated-text" id="generate-length-m"></p>
             </div>
             <div class="container-info" id="volume">
-                <h1 class="text-container">Volume (Liters/Gallons)</h1>
+                <p class="text-container">Volume (Liters/Gallons)</p>
+                <p class="generated-text" id="generate-volume"></p>
             </div>
             <div class="container-info" id="mass">
-                <h1 class="text-container">Mass (Kilograms/Pounds)</h1>
+                <p class="text-container">Mass (Kilograms/Pounds)</p>
+                <p class="generated-text" id="generate-mass"></p>
             </div>
         </div>
     </main>
